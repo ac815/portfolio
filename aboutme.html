@@ -4,44 +4,45 @@
 	<style>
 
   /* unvisited link */
-	<center>a:link {
- 	   color: #68838B;
-	}
+	/*<center>a:link {*/
+ 	   /*color: #68838B;
+	}*/
 
 	/* mouse over link */
 	a:hover {
     	color: #9AC0CD;
 	}
 
-  #nav {
+  /*#nav {
 	text-align:center;
-	}
-	#nav li {
+	}*/
+	/*#nav li {
 	display:inline;
 	}
 	#nav a {
 	text-decoration:none;
-	padding:0 4%; /* variable width */
-	}
+	padding:0 4%;*/ /* variable width*/
+	/*}*/
 
-    .topnav {
+
+    /*.topnav {
     	overflow: hidden;
-    }
+    }*/
 
     .container{
-    	text-align: center;
+    	text-align: left;
         width: auto;
-        margin: 0;
+        margin: 5;
         background-color: #565656
 
     .topnav a {
     	float: left;
         display: block;
         color: #565656;
-        text-align: center;
+        text-align: left;
         padding: 5px 5px;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .topnav a:hover {
@@ -121,7 +122,44 @@
     <ul>
     	<li>
     </ul>
-	<p> I used Python to create a filter on an image by changing the color value of the pixels to either dark blue, red, light blue, or yellow, depending on the intensity or shade of the pixel in the original image. The filtered image is colored in a way similar to that of the Obamicon image. I first used a "for" loop to find the sum of the RGB values in each pixel, and then I used "if," "elif," and "else" statements to change the original color to a certain color depending on the sum of the color values in the pixel.
+
+	<!-- .dropdown {
+			position: relative;
+			display: inline-block;
+	}
+
+	.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+	}
+
+	.dropdown:hover .dropdown-content {
+			display: block;
+	}
+
+	.desc {
+			padding: 15px;
+			text-align: center;
+	} -->
+	</style>
+	</head>
+	<body>
+
+	<h2>Obamicon Project</h2>
+	<p>I used Python to create a filter on an image by changing the color value of the pixels to either dark blue, red, light blue, or yellow, depending on the intensity or shade of the pixel in the original image. The filtered image is colored in a way similar to that of the Obamicon image. I first used a "for" loop to find the sum of the RGB values in each pixel, and then I used "if," "elif," and "else" statements to change the original color to a certain color depending on the sum of the color values in the pixel.</p>
+
+	<div class="dropdown">
+		<img src="dog.jpg" alt="Before" width="100" height="50">
+		<div class="dropdown-content">
+			<img src="dog.jpg" alt="Before" width="300" height="200">
+			<div class="desc">This is the original, unedited image.</div>
+		</div>
+	</div>
+
 	<div style="float:left; width:50%; padding-left:10%">
 	<center><h3>Before:</h3>
 	<img src="dog.jpg" style="width:128px;height:150px;"></center>
